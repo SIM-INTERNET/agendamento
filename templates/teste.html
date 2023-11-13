@@ -1,0 +1,29 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Teste{% endblock title %}
+
+{% block extracss %}
+  <link href="{% static 'calender/main.css' %}" rel="stylesheet" />
+{% endblock extracss %}
+
+{% block breadcrumb %}
+  <div>
+      <h1><i class="fa fa-calendar"></i> c test</h1>
+      <p>testeeee</p>
+  </div>
+  <ul class="app-breadcrumb breadcrumb">
+      <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+      <li class="breadcrumb-item"><a href="#">dtest</a></li>
+  </ul>
+{% endblock breadcrumb %}
+
+{% block content %}
+<div>
+    test
+</div>
+
+{% endblock content %}
+
+{% block extrascripts %}
+
+{% endblock extrascripts %}
