@@ -12,6 +12,12 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+  
+  --secundaria: #007bff;
+  --terciaria: #ff0000;
+  --quartuaria : #030405;
+
+  --primario: #fa8e00;
   --blue: #007bff;
   --indigo: #6610f2;
   --purple: #6f42c1;
@@ -19,7 +25,6 @@
   --red: #dc3545;
   --darkorange: #cc630e93;
   --orange: #ff7300;
-  --orange1: #fa8e00;
   --orange2: #ff7b00;
   --yellow: #ffc107;
   --green: #28a745;
@@ -14869,7 +14874,7 @@ be a descendant of the grid when it is being dragged.
   min-height: calc(100vh - 50px);
   margin-top: 50px;
   padding: 30px;
-  background-color: #E5E5E5;
+  background-color: #fff;
   -webkit-transition: margin-left 0.3s ease;
   -o-transition: margin-left 0.3s ease;
   transition: margin-left 0.3s ease;
@@ -14978,7 +14983,7 @@ be a descendant of the grid when it is being dragged.
 .app-sidebar__toggle {
   padding: 0 15px;
   font-family: fontAwesome;
-  color: var(--orange1);
+  color: var(--primario);
   line-height: 2.4;
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
@@ -15027,7 +15032,7 @@ be a descendant of the grid when it is being dragged.
   display: block;
   padding: 15px;
   line-height: 20px;
-  color: var(--orange1);
+  color: var(--primario);
   -webkit-transition: background-color 0.3s ease;
   -o-transition: background-color 0.3s ease;
   transition: background-color 0.3s ease;
@@ -15093,7 +15098,7 @@ be a descendant of the grid when it is being dragged.
   bottom: 10px;
   padding: 0 10px;
   border: 0;
-  color: var(--orange1);
+  color: var(--primario);
   background: none;
   cursor: pointer;
 }
@@ -15168,7 +15173,7 @@ be a descendant of the grid when it is being dragged.
   width: 230px;
   overflow: auto;
   z-index: 10;
-  background-color: var(--orange1);
+  background-color: var(--primario);
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
   -webkit-transition: left 0.3s ease,
@@ -15538,7 +15543,7 @@ be a descendant of the grid when it is being dragged.
 
 .tile {
   position: relative;
-  background: #ffffff;
+  background: #fff6f6;
   border-radius: 3px;
   padding: 20px;
   -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
