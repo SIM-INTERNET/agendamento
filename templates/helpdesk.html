@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}z
+{% load static %}
+{% block title %}Teste{% endblock title %}
+
+{% block extracss %}
+  <link href="{% static 'calender/main.css' %}" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="{% static 'calendario/css/style.css' %}">
+{% endblock extracss %}
+
+{% block breadcrumb %}
+  <div>
+      <h1><i class="fa fa-calendar"></i> atendimento técnico</h1>
+      <p>testeeee</p>
+  </div>
+  <ul class="app-breadcrumb breadcrumb">
+      <li class="breadcrumb-item"><i class="fa fa-home fa-lg"></i></li>
+      <li class="breadcrumb-item"><a href="#">teste1</a></li>
+  </ul>
+
+{% endblock breadcrumb %}
+
+{% block content %}
+
+lista de helpdesk
+
+{% endblock content %}
+
+{% block extrascripts %}
+<script src="{% static 'calendario/js/main.js'%}"></script>
+{% endblock extrascripts %}

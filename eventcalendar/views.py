@@ -22,5 +22,9 @@ class DashboardView(LoginRequiredMixin, View):
     ''''''
 
 
-def teste_view(request):
-    return render(request, 'teste.html')
+def calendario_view(request):
+    return render(request, 'calendario.html')
+
+
+def helpdesk_view(request):
+    return render(request, 'helpdesk.html')
