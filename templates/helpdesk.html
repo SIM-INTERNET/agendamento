@@ -21,7 +21,22 @@
 
 {% block content %}
 
-lista de helpdesk
+{% for help in helpdesk.helpdesks %}
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      {{help.codigo_helpdesk}}
+    </div>
+    <div class="col-sm">
+      {{help.sintoma.descricao_sintoma}}
+    </div>
+    <div class="col-sm">
+      {{help.codigo_quem_atendeu}}
+    </div>
+  </div>
+</div>
+{% endfor %}
+
 
 {% endblock content %}
 
