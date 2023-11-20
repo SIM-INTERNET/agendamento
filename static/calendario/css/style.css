@@ -4,6 +4,11 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
+
+:root{
+  --cale1:orange;
+  --cale2:red;
+}
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -924,6 +929,7 @@ pre {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
   .col-md-12 {
+    margin-left: -180px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -8192,6 +8198,7 @@ h1, h2, h3, h4, h5,
 /*  Events display */
 .events-container {
   overflow-y: scroll;
+  background: var(--cale1);
   height: 100%;
   width: 50%;
   float: right;
@@ -8324,7 +8331,7 @@ h1, h2, h3, h4, h5,
   transition: .2s ease all;
   color: white;
   border: none;
-  background: #7e0cf5; }
+  background:var(--cale1); }
   .button.button-white {
     background: #fff;
     color: #000; }
@@ -8429,7 +8436,7 @@ h1, h2, h3, h4, h5,
     background: #28a745; }
 
 .active-date {
-  background: #cd4dcc;
+  background:var(--cale1);
   color: #fff; }
 
 .event-date.active-date {
