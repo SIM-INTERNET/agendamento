@@ -61,7 +61,7 @@ async def helpdesk_view(request):
 #                 url=environ.get('URL_API') + '/recursos/consultaHelpDesk/',
 #                 params={
 #                     'chave': 'sim-isp.tins.com.br',
-#                     "data_abertura": ["2023-11-17", "2023-11-16"]
+#                     "data_abertura": ["2023-11-17", "2023-11-16"]         vc  
 #                 },
 #                 headers={
 #                     'Content-Type': 'application/json',
