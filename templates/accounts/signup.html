@@ -1,100 +1,99 @@
-<!DOCTYPE html>
-<html lang="en">
-{% load static %}
+<!doctype html>
+<html lang="en" class="light-theme">
+
 <head>
-  <title>Inscreva-se |  Calendário de eventos</title>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+  <!-- loader-->
+  <link href="{% static '' %}assets/css/pace.min.css" rel="stylesheet" />
+  <script src="assets/js/pace.min.js"></script>
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!--plugins-->
+  <link href="assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="{% static 'css/accounts.css' %}" />
+  <!-- CSS Files -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/bootstrap-extended.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <title>Fobia - Bootstrap5 Admin Template</title>
 </head>
+
 <body>
-  <section class="ftco-section">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-12">
-          <div class="wrap d-md-flex">
-            <div class="text-wrap p-4 p-lg-5 d-flex img" style="background-image: url({% static 'images/bg.jpg' %});">
-              <div class="text w-100">
-                <h2 class="mb-4">Bem-vindo ao calendário de eventos</h2>
-                <p>
-                  Muito longe, atrás da palavra montanhas, longe dos países Vokalia e Consonantia, vivem os textos cegos.
-                </p>
-              </div>
-            </div>
-            <div class="login-wrap p-4 p-md-5">
-              <div class="row justify-content-center py-md-5">
-                <div class="col-lg-9">
-                  <div class="social-wrap">
-                    <h3 class="mb-3 text-center">Inscreva-se nestes serviços,</h3>
-                    <p class="social-media d-flex justify-content-center">
-                      <a href="#" class="social-icon google d-flex align-items-center justify-content-center"><span class="fa fa-google"></span></a>
-                      <a href="#" class="social-icon facebook d-flex align-items-center justify-content-center"><span class="fa fa-facebook"></span></a>
-                      <a href="#" class="social-icon twitter d-flex align-items-center justify-content-center"><span class="fa fa-twitter"></span></a>
-                    </p>
-                    <p class="or">
-                      <span>or</span>
-                    </p>
-                  </div>
-                  <form action="#" method="post" class="signup-form">
-                    {% csrf_token %}
-                    <div class="row">
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="email">Email Address</label>
-                          {{ form.email }}
-                          <span class="text-danger">{{ form.errors.email }}</span>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="password">Senha</label>
-                          {{ form.password1 }}
-                          <span class="text-danger">{{ form.errors.password1 }}</span>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="password">Senha</label>
-                          {{ form.password2 }}
-                          <span class="text-danger">{{ form.errors.password2 }}</span>
-                        </div>
-                      </div>
-                      <div class="col-md-12 my-4">
-                        <div class="form-group">
-                          <div class="w-100">
-                            <label class="checkbox-wrap checkbox-primary">
-                              Eu concordo com todas as declarações em termos de serviço
-                              <input type="checkbox" checked />
-                              <span class="checkmark"></span>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <button type="submit" class="btn btn-primary">Ciar um conta</button>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div class="w-100">
-                    <p class="mt-4">
-                      Eu já sou um membro! <a href="{% url 'accounts:signin' %}">Entrar</a>
-                    </p>
-                  </div>
+
+  <!--start wrapper-->
+  <div class="wrapper">
+    <div class="">
+      <div class="row g-0 m-0">
+        <div class="col-xl-6 col-lg-12">
+          <div class="login-cover-wrapper">
+            <div class="card shadow-none">
+              <div class="card-body">
+                <div class="text-center">
+                  <h4>Join us today</h4>
+                  <p>Enter your email and password to register</p>
                 </div>
+                <form class="form-body row g-3">
+                  <div class="col-12">
+                    <label for="inputName" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="inputName">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputEmail" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword">
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                      <label class="form-check-label" for="flexCheckChecked">
+                        I agree the Terms and Conditions
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="d-grid">
+                      <button type="button" class="btn btn-primary">Sign Up</button>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="position-relative border-bottom my-3">
+                      <div class="position-absolute seperator translate-middle-y">or continue with</div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12">
+                    <div class="social-login d-flex flex-row align-items-center justify-content-center gap-2 my-2">
+                      <a href="javascript:;" class=""><img src="assets/images/icons/facebook.png" alt=""></a>
+                      <a href="javascript:;" class=""><img src="assets/images/icons/apple-black-logo.png" alt=""></a>
+                      <a href="javascript:;" class=""><img src="assets/images/icons/google.png" alt=""></a>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-12 text-center">
+                    <p class="mb-0">Already have an account? <a href="authentication-sign-in-cover.html">Sign in</a></p>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
         </div>
+        <div class="col-xl-6 col-lg-12">
+          <div class="position-fixed top-0 h-100 d-xl-block d-none register-cover-img">
+          </div>
+        </div>
       </div>
+      <!--end row-->
     </div>
-  </section>
-  {% include 'base/js.html' %}
+  </div>
+  <!--end wrapper-->
+
+
 </body>
+
 </html>
